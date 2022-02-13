@@ -1,0 +1,137 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.menu {
+	box-sizing: border-box;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    background-color: #394555;
+}
+.menu h1 {
+	box-sizing: border-box;
+    margin: 0;
+    font-size: 26px;
+    display: inline-block;
+    float: left;
+	line-height: 65px;
+    padding: 0 80px 0 80px;
+    color: #edf0f3;
+}
+.menu > ul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.menu > ul ul {
+	list-style-type: none;
+	display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+.menu > ul > li {
+	float: left;
+    display: inline-block;
+}
+.menu > ul li li {
+	position: relative;
+}
+.menu > ul > li:hover > ul {
+	display: block;
+}
+.menu > ul > li > ul li:hover > ul {
+	display: block;
+    top: 0;
+    left: 100%;
+}
+.menu a {
+	display: block;
+    padding: 25px 45px 25px 45px;
+    background-color: #394555;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #dadcdf;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 150px;
+    text-align: center;
+}
+.menu > ul > li > a {
+	border-right: 1px solid #2b3543;
+}
+.menu > ul > li:first-child > a {
+	border-left: 1px solid #2b3543;
+}
+.menu > ul > li > a:hover {
+	background-color: #303a47;
+}
+.menu > ul ul li a {
+	display: block;
+    padding: 25px 45px 25px 45px;
+    background-color: #29323d;
+    box-sizing: border-box;
+}
+.menu > ul ul li a:hover {
+	background-color: #1b2129;
+}
+.menu > ul ul ul ~ a::after {
+	content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent rgba(255,255,255,0.3);
+}
+.menu label,
+.menu input {
+	display: none;
+}
+@media screen and (max-width: 700px) {
+	.menu ul {
+    	display: none;
+    }
+    .menu label {
+    	display: block;
+        float: right;
+        text-align: center;
+        width: 40px;
+        border-left: 1px solid #2b3543;
+        padding: 15px 25px 15px 25px;
+        opacity: 0.8;
+    }
+    .menu input:checked ~ ul {
+    	display: block;
+        top: 100%;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 100%);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+	.menu input:checked ~ ul li,
+    .menu input:checked ~ ul ul,
+    .menu input:checked ~ ul a {
+    	position: static;
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .menu input:checked ~ ul ul ul ~ a::after {
+    	border: 0;
+    }
+    .menu a {
+    	background-color: #29323d;
+    }
+}
