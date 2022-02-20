@@ -1,20 +1,20 @@
 <header class="header-area overlay">
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark" [class.fixed-top]="fixedTop">
 		<div class="container">
 			<a href="#" class="navbar-brand">Bootdey.com</a>
 			
-			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+			<button (click)="openMenu=!openMenu" type="button" class="navbar-toggler collapsed">
 				<span class="menu-icon-bar"></span>
 				<span class="menu-icon-bar"></span>
 				<span class="menu-icon-bar"></span>
 			</button>
 			
-			<div id="main-nav" class="collapse navbar-collapse">
+			<div id="main-nav" [ngbCollapse]="openMenu" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
 					<li><a href="#" class="nav-item nav-link active">Home</a></li>
 					<li><a href="#" class="nav-item nav-link">About Us</a></li>
 					<li class="dropdown">
-						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Services</a>
+						<a href="#" class="nav-item nav-link">Services</a>
 						<div class="dropdown-menu">
 							<a href="#" class="dropdown-item">Dropdown Item 1</a>
 							<a href="#" class="dropdown-item">Dropdown Item 2</a>
@@ -22,7 +22,7 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Portfolio</a>
+						<a href="#" class="nav-item nav-link">Portfolio</a>
 						<div class="dropdown-menu">
 							<a href="#" class="dropdown-item">Dropdown Item 1</a>
 							<a href="#" class="dropdown-item">Dropdown Item 2</a>
