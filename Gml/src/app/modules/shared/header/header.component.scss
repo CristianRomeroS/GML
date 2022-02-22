@@ -8,6 +8,16 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
 }
+.banner{
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.containerHeader{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
 h1 {
   margin-bottom: 0.5em;
   font-size: 3.6rem;
@@ -31,9 +41,10 @@ p {
   font-weight: 700;
   transition: color 0.3s ease-in;
   z-index: 1;
+  text-decoration: none;
 }
 .button-primary:hover {
-  color: #c0ca33;
+  color: #e8e11c;
   text-decoration: none;
 }
 .button-primary::after {
@@ -53,7 +64,7 @@ p {
   z-index: -1;
 }
 .button-primary:hover::after {
-  opacity: 1;
+  opacity: 0;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
