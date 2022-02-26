@@ -11,7 +11,7 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     CommonModule,
-    BodyRoutingModule
+    BodyRoutingModule,
   ]
 })
 export class BodyModule { }
