@@ -1,0 +1,89 @@
+
+ <mat-card>
+    <form autocomplete="off" [formGroup]="formContact">
+        <div class="cabecera">
+            <h2>Contacto</h2>
+            <p>Rellena el siguiente formulario explicando de forma detallada el motivo de tu consulta.
+                Los campos requeridos están marcados con *.</p>
+        </div>
+        <div class="cuerpo">
+                <mat-form-field
+                matTooltip="Introduzca su nombre"
+                matTooltipPosition="below"
+                matTooltipClass="tooltip-form"
+                            class="mat-headline">             
+                    <mat-label>Nombre: *</mat-label>
+                    <input type="text"
+                        matInput
+                        formControlName="name"
+                        >
+                    <mat-error *ngIf="formContact.controls.name.hasError('required')">
+                        El campo es obligatorio
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field
+                matTooltip="Introduzca su correo electronico"
+                matTooltipPosition="below"
+                matTooltipClass="tooltip-form"
+                            class="mat-headline">             
+                    <mat-label>Correo electronico: *</mat-label>
+                    <input type="text"
+                        matInput
+                        formControlName="email"
+                        >
+                    <mat-error *ngIf="formContact.controls.email.hasError('required')">
+                        El campo es obligatorio
+                    </mat-error>
+                    <mat-error *ngIf="formContact.controls.email.hasError('pattern')">
+                        introduzca un correo valido
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field
+                matTooltip="Introduzca su correo electronico"
+                matTooltipPosition="below"
+                matTooltipClass="tooltip-form"
+                            class="mat-headline">             
+                    <mat-label>Teléfono: *</mat-label>
+                    <input type="text"
+                        matInput
+                        formControlName="phone"
+                        >
+                    <mat-error *ngIf="formContact.controls.phone.hasError('required')">
+                        El campo es obligatorio
+                    </mat-error>
+                    <mat-error *ngIf="formContact.controls.phone.hasError('pattern')">
+                        El número de télefono debe ser correcto
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field
+                            matTooltip="Introduzca una breve descripción de la consulta a realizar maximo 500 caracteres"
+                            matTooltipPosition="below"
+                            matTooltipClass="tooltip-form"
+                                        class="mat-headline">
+                            <mat-label>Mensaje: *</mat-label>
+                            <textarea type="text"
+                                matInput
+                                formControlName="mensaje"
+                                ></textarea>
+                            <mat-error *ngIf="formContact.controls.mensaje.hasError('required')">
+                                El campo es obligatorio
+                            </mat-error>
+                    </mat-form-field>
+                    
+            </div>
+            <div class="opciones">
+                <mat-checkbox formControlName="aceptar"
+                matTooltip="politica de privacidad debe aceptar para enviar la consulta" 
+                matTooltipPosition="below" matTooltipClass="tooltip-form">He leído y acepto la política de protección de datos.
+                <a routerLink="/inicio" target="_blank">Leer más</a>
+                </mat-checkbox>
+            </div>
+            <div class="intro">
+                <button  [disabled]="!formContact.valid  || !formContact.controls.aceptar.value==true">ENVIAR</button>
+                <button  routerLink="/.">CANCELAR</button>
+            </div>
+    </form>
+ </mat-card>
+

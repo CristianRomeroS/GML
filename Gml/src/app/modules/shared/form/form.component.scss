@@ -1,0 +1,10 @@
+.cabecera{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecera p{
+    width: 70%;
+    font-size: 1.2rem;
+}
