@@ -1,7 +1,48 @@
 .body{
-    padding: 0 10vw;
+    padding: 1vw;
 }
 .card{
     min-width: 200px;
     max-width: 350px;
+    margin: 1vw;
+}
+
+.card-title{
+    font-size: x-large;
+    padding: 0.5vw;
+    color:#00ADB5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    width: 28px;
+}
+.icon-caldera{
+    width: 25px;
+}
+
+.card-text{
+    padding: 1vh 0;
+}
+.card-footer{
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.card-footer a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white; 
+}
+.card-footer a:hover{
+    color:#00ADB5;
+}
+
+@media screen and (max-width:375px) {
+    main{
+        min-width: 375px;
+    }
+    
 }
