@@ -11,3 +11,21 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+main{
+    width: 90vw;
+    margin: 0 auto;
+}
+.header-main{
+    background-color: #393E46;
+    text-align: center;
+    padding: 1%;
+    color: white;
+    margin:2vw 0;
+
+}
+.header-main h3{
+    font-size: 28px;
+    margin: 0;
+    padding: 1vw;
+}

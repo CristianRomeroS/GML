@@ -239,7 +239,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .navbar-brand {
-    margin-left: 20px;
+    // display: none;
   }
   .navbar-nav {
     padding: 0 20px;
@@ -350,4 +350,15 @@ p {
     -ms-transform: scaleY(1);
     transform: scaleY(1);
   }
+}
+
+
+@media screen and (max-width:375px) {
+  header{
+      min-width: 375px;
+  }
+  .container .navbar-brand{
+    font-size: 2rem;
+  }
+  
 }
