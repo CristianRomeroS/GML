@@ -17,29 +17,33 @@
     height: 100%;
 }
 .sobren{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2%;
-    padding: 1vw;
-    height: 101vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 .intro{
-    display: grid;
-    grid-template-columns: 1fr 1fr;   
-    grid-gap: 1%;
+   display: flex;
+   padding: 2vh;
+   
 }
 .imagen_intro,
 .imagen_intro_2{
     width: 500px;
+    flex-basis: 50% ;
+    padding: 1vw;
 }
 .imagen_intro>img,
 .imagen_intro_2>img{
     width: 100%;
+    
 }
 .imagen_intro_2{
     justify-self: end;
 }
-
+.descripcion{
+    flex-basis: 50% ;
+    padding: 1vw;
+}
 .descripcion>h1{
     font-size: 28px;
 }
@@ -79,9 +83,12 @@
     color:#00ADB5;
 }
 @media screen and (max-width:1100px){
+
     .intro{
-        grid-template-columns: 1fr;
-        justify-items: center;
+        flex-direction: column;
+    }
+    .imagen_intro_2{
+        order: -1;
     }
     .imagen_intro,
     .imagen_intro_2{
