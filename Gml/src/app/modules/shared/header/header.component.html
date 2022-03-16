@@ -1,7 +1,7 @@
 <header class="header-area overlay">
     <nav class="navbar navbar-expand-md navbar-dark" [class.fixed-top]="fixedTop">
 		<div class="container">
-			<a href="#" class="navbar-brand"><img src="../../../../assets/images/logo/Logo-no-fondo.png" class="logo">
+			<a routerLink="/inicio" class="navbar-brand"><img src="../../../../assets/images/logo/Logo-no-fondo.png" class="logo">
 				 <span>Instalaciones Siacara</span></a>
 			
 			<button (click)="openMenu=!openMenu" type="button" class="navbar-toggler collapsed">
@@ -16,12 +16,12 @@
 					<li class="dropdown">
 						<a href="#" class="nav-item nav-link">Servicios</a>
 						<div class="dropdown-menu">
-							<a href="#" class="dropdown-item">CALDERAS</a>
-							<a href="#" class="dropdown-item">GAS</a>
-							<a href="#" class="dropdown-item">AEROTERMIA</a>
-							<a href="#" class="dropdown-item">CALEFACCIÓN</a>
-							<a href="#" class="dropdown-item">AGUA C.S.</a>
-							<a href="#" class="dropdown-item">SANEAMIENTOS</a>
+							<a routerLink="/calderas" class="dropdown-item">CALDERAS</a>
+							<a routerLink="/gas" class="dropdown-item">GAS</a>
+							<a routerLink="/aerotermia" class="dropdown-item">AEROTERMIA</a>
+							<a routerLink="/calefaccion"class="dropdown-item">CALEFACCIÓN</a>
+							<a routerLink="/acs" class="dropdown-item">AGUA C.S.</a>
+							<a routerLink="/saneamientos" class="dropdown-item">SANEAMIENTOS</a>
 							
 							
 						</div>

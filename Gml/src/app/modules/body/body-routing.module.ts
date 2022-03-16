@@ -9,7 +9,7 @@ import { GasComponent } from './gas/gas.component';
 import { MainComponent } from './main/main.component';
 import { SaneamientosComponent } from './saneamientos/saneamientos.component';
 
-const routes: Routes = [
+ const routes: Routes = [
   {
     path:'inicio',
     component:MainComponent
