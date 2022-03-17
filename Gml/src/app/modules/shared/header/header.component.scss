@@ -12,7 +12,11 @@ body {
   background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
   
+}
+.logo{
+  width: 50px;
 }
 .line{
   line-height: 60px;
