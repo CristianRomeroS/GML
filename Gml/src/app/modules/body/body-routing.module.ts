@@ -39,6 +39,10 @@ import { SaneamientosComponent } from './saneamientos/saneamientos.component';
     component:GasComponent
   },
   {
+    path:'galeria',
+    component:GaleriaComponent
+  },
+  {
     path:'**',
     redirectTo:'inicio'
   }

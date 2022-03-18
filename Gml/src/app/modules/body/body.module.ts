@@ -13,6 +13,7 @@ import { CalefaccionComponent } from './calefaccion/calefaccion.component';
 import { AcsComponent } from './acs/acs.component';
 import { SaneamientosComponent } from './saneamientos/saneamientos.component';
 import { SharedModule } from '../shared/shared.module';
+import { NgbModule,NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     BodyRoutingModule,
     RouterModule,
-    SharedModule
+    SharedModule,NgbModule,NgbCarouselModule
+
   ]
 })
 export class BodyModule { }
