@@ -366,3 +366,9 @@ p {
   }
   
 }
+
+@media screen and (max-width:480px){
+  .log_span{
+    display: none;
+  }
+} 

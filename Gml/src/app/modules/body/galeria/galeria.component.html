@@ -1,35 +1,17 @@
-<main>
+<div class="main">
   <div class="header-main">
-    <h3>INSTALACIONES</h3>
+    <h3>INSTALACIONES REALIZADAS DE {{(path.substring(path.indexOf("/")+1)).toUpperCase()}}</h3>
   </div>
 <div class="container-fluid">
   <ngb-carousel *ngIf="images">
-    <ng-template ngbSlide>
+    <ng-template ngbSlide *ngFor="let item of images">
       <div class="picsum-img-wrapper">
-        <img [src]="images[0]" alt="Random first slide">
+        <img [src]="item" alt="Random first slide">
       </div>
-      <div class="carousel-caption">
+      <!-- <div class="carousel-caption">
         <h3>First slide label</h3>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[1]" alt="Random second slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[2]" alt="Random third slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
+      </div> -->
     </ng-template>
   </ngb-carousel></div>
-</main>
+</div>

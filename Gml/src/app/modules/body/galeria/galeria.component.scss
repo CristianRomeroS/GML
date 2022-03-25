@@ -1,3 +1,38 @@
-.container-fluid{
-    width: 900px;
+.main{
+    width: 100%;
+    margin: 0 auto;
 }
+.container-fluid,.header-main{
+    width: 95%;
+    margin: 0 auto;
+}
+.container-fluid{
+    background-color: black;
+}
+.picsum-img-wrapper{
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.picsum-img-wrapper img{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+    .picsum-img-wrapper img{
+      height: 100%;
+      object-fit: scale-down;
+      object-position: center center;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container-fluid{
+        min-width: 375px;  
+    }
+    .picsum-img-wrapper{
+        min-width: 375px;
+    }
+  }
+  
