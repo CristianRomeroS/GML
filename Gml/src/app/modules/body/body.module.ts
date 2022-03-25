@@ -14,6 +14,7 @@ import { AcsComponent } from './acs/acs.component';
 import { SaneamientosComponent } from './saneamientos/saneamientos.component';
 import { SharedModule } from '../shared/shared.module';
 import { NgbModule,NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 @NgModule({
@@ -25,13 +26,16 @@ import { NgbModule,NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     AerotermiaComponent,
     CalefaccionComponent,
     AcsComponent,
-    SaneamientosComponent
+    SaneamientosComponent,
+    ContactoComponent
   ],
   imports: [
     CommonModule,
     BodyRoutingModule,
     RouterModule,
-    SharedModule,NgbModule,NgbCarouselModule
+    SharedModule,
+    NgbModule,
+    NgbCarouselModule
 
   ]
 })

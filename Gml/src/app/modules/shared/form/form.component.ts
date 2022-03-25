@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { contact } from '../interfaces/contact.interfaces';
+import { PoliticadeprivacidadComponent } from '../politicadeprivacidad/politicadeprivacidad.component';
 
 
 @Component({
@@ -17,9 +20,27 @@ export class FormComponent implements OnInit {
     mensaje:[,Validators.required],
     aceptar:[false,[Validators.required]]
   })
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder,
+              public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  public enviar(){
+    const consulta:contact={
+      nombre:this.formContact.get('name')?.value,
+      correo:this.formContact.get('email')?.value,
+      telefono:this.formContact.get('phone')?.value,
+      mensaje:this.formContact.get('mensaje')?.value 
+    }
+
+  }
+
+  public openDialog():void{
+    const dialogRef = this.dialog.open(PoliticadeprivacidadComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }

@@ -56,6 +56,10 @@ export class HeaderComponent implements OnInit {
       this.titulo="SANEAMIENTOS";
       this.cosa="Te ofrecemos nuestro servicio, contamos con técnicos expertos, autorizados y certificados para hacer cualquier reparación de averías (tuberias, sanitarios, fugas, goteos, sanitarios, radiadores, etc)"
 
+    }else if(this.location.path()=='/contacto'){
+      this.bgBanner="../../../../assets/images/fondosheader/headersaneamientos.jpg";
+      this.titulo="CONTACTO";
+      this.cosa="Si quieres un presupuesto sin compromiso alguno o más información sobre cualquiera de nuestros servicios, no dudes en escribirnos."
     }else{
       this.bgBanner="https://remodela2000.com/wp-content/uploads/2021/04/reformas-en-madrid-1500x750.jpg";
       this.titulo="Instalaciones Siacara";

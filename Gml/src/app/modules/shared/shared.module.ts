@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
+import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicadeprivacidad.component';
 
 
 
@@ -16,7 +17,8 @@ import { MaterialModule } from '../material/material.module';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    FormComponent
+    FormComponent,
+    PoliticadeprivacidadComponent
   ],
   imports: [
     CommonModule,

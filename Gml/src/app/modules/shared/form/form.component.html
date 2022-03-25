@@ -1,4 +1,4 @@
-<div class="container">
+<div class="contenedor">
     <div class="izq">
         <img src="../../../../assets/images/random/cuaderno.jpg" />
     </div>
@@ -61,16 +61,16 @@
 
 
                 <mat-checkbox formControlName="aceptar"
-                    matTooltip="politica de privacidad debe aceptar para enviar la consulta" matTooltipPosition="below"
                     matTooltipClass="tooltip-form">He leído y acepto la política de
                     protección de datos.
+                    <button mat-button (click)="openDialog()"  color="primary" >Leer más</button>
                 </mat-checkbox>
-                <a routerLink="/inicio" target="_blank">Leer más</a>
+                
 
                 <div class="col-md-12 text-center">
                     <button [disabled]="!formContact.valid  || !formContact.controls.aceptar.value==true"
-                        class="btn btn-primary">ENVIAR</button>
-                    <button routerLink="/." class="btn btn-primary">CANCELAR</button>
+                    mat-button >ENVIAR</button>
+                    <button routerLink="/." mat-button >CANCELAR</button>
                 </div>
             </form>
         </mat-card>

@@ -4,6 +4,7 @@ import { AcsComponent } from './acs/acs.component';
 import { AerotermiaComponent } from './aerotermia/aerotermia.component';
 import { CalderasComponent } from './calderas/calderas.component';
 import { CalefaccionComponent } from './calefaccion/calefaccion.component';
+import { ContactoComponent } from './contacto/contacto.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { GasComponent } from './gas/gas.component';
 import { MainComponent } from './main/main.component';
@@ -37,6 +38,10 @@ import { SaneamientosComponent } from './saneamientos/saneamientos.component';
   {
     path:'gas',
     component:GasComponent
+  },
+  {
+    path:'contacto',
+    component:ContactoComponent
   },
   {
     path:'**',
