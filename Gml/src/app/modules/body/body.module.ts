@@ -15,6 +15,7 @@ import { SaneamientosComponent } from './saneamientos/saneamientos.component';
 import { SharedModule } from '../shared/shared.module';
 import { NgbModule,NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactoComponent } from './contacto/contacto.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     RouterModule,
     SharedModule,
     NgbModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    MaterialModule
 
   ]
 })

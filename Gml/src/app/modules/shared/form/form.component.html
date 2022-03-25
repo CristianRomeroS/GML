@@ -1,8 +1,4 @@
 <div class="contenedor">
-    <div class="izq">
-        <img src="../../../../assets/images/random/cuaderno.jpg" />
-    </div>
-    <div class="der">
         <mat-card>
             <form autocomplete="off" [formGroup]="formContact">
                 <div class="cabecera">
@@ -60,11 +56,15 @@
                 </div>
 
 
-                <mat-checkbox formControlName="aceptar"
-                    matTooltipClass="tooltip-form">He leído y acepto la política de
-                    protección de datos.
-                    <button mat-button (click)="openDialog()"  color="primary" >Leer más</button>
+
+                <div class="aceptar">
+                    <mat-checkbox formControlName="aceptar"
+                    matTooltipClass="tooltip-form">
                 </mat-checkbox>
+                    <p>He leído y acepto la política de
+                        protección de datos.
+                        <button mat-button (click)="openDialog()"  color="primary" >Leer más</button></p> 
+                </div>
                 
 
                 <div class="col-md-12 text-center">
@@ -74,6 +74,4 @@
                 </div>
             </form>
         </mat-card>
-    </div>
-
 </div>

@@ -11,7 +11,12 @@ export class GaleriaComponent implements OnInit {
   public images:string[]=[];
   public path:string="";
   public objetosRuta:any={
-    "calderas":33
+    "calderas":33,
+    "acs":6,
+    "aerotermia":42,
+    "calefaccion":9,
+    "gas":21,
+    "saneamientos":21
   }
   constructor(private location: Location) { }
 

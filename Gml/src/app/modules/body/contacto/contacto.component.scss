@@ -1,0 +1,38 @@
+main{
+    padding: 2vh;
+}
+.contacto{
+    display: flex;
+    padding: 4vh 0 0 0;
+    justify-content: space-between;
+}
+.info,.formulario{
+    flex-basis: 45%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.info_datos{
+    display: flex;
+}
+.formulario{
+    display: flex;
+   align-items: center;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:1000px){
+    .contacto{
+        flex-direction: column;
+    }
+  } 
+
+ @media screen and (max-width:375px){
+    main{
+        min-width: 375px;
+    }
+  } 
