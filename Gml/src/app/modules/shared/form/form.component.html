@@ -69,9 +69,10 @@
 
                 <div class="col-md-12 text-center">
                     <button [disabled]="!formContact.valid  || !formContact.controls.aceptar.value==true"
-                    mat-button >ENVIAR</button>
+                    mat-button (click)="enviar()">ENVIAR</button>
                     <button routerLink="/." mat-button >CANCELAR</button>
                 </div>
             </form>
         </mat-card>
 </div>
+
