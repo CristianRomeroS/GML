@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicadeprivacidad.component';
+import { ContentbodyComponent } from './contentbody/contentbody.component';
 
 
 
@@ -18,7 +19,8 @@ import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicade
     HeaderComponent,
     FooterComponent,
     FormComponent,
-    PoliticadeprivacidadComponent
+    PoliticadeprivacidadComponent,
+    ContentbodyComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +33,7 @@ import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicade
     HeaderComponent,
     FooterComponent,
     FormComponent,
+    ContentbodyComponent
   ]
 })
 export class SharedModule { }

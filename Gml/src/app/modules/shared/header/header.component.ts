@@ -29,7 +29,8 @@ export class HeaderComponent implements OnInit {
     if(this.location.path()=='/calefaccion'){
       this.bgBanner="../../../../assets/images/fondosheader/headercalefaccion.jpg";
       this.titulo="CALEFACCÍON";
-      this.cosa="Si su vivienda no tiene instalación de calefacción se la realizamos al mejor precio, asesorándole con el sistema más adecuado para cada caso."
+      this.cosa=`¿Desea cambiar su antiguo radiador? 
+      Nosotros nos encargamos de la sustitución de uno nuevo. Realizamos instalaciones en reformas y obra nueva, también reparamos cualquier fuga que pueda tener su instalación. Nosotros también instalamos suelo radiante, el cual está ganando más popularidad en estos últimos años, nos encargamos del dimensionamiento y su instalación`
       console.log(this.location.path())
     }else if(this.location.path()=='/calderas'){
       this.bgBanner="../../../../assets/images/fondosheader/headerboiler.jpg";
@@ -39,7 +40,7 @@ export class HeaderComponent implements OnInit {
     }else if(this.location.path()=='/gas'){
       this.bgBanner="../../../../assets/images/fondosheader/headergas.jpg";
       this.titulo="GAS";
-      this.cosa="Realizamos cambios de butano y propano a gas natural que es más ecológico y económico"
+      this.cosa="Realizamos instalaciones de gas para su vivienda: IRI, contadores, reguladores, etc. También corregimos cualquier tipo de anomalía que tenga su instalación. Trabajo realizado por personal cualificado y experto en el sector que certifica todas nuestras instalaciones como dicta la industria."
 
     }else if(this.location.path()=='/aerotermia'){
       this.bgBanner="../../../../assets/images/fondosheader/headeraero.jpg";
@@ -54,7 +55,7 @@ export class HeaderComponent implements OnInit {
     }else if(this.location.path()=='/saneamientos'){
       this.bgBanner="../../../../assets/images/fondosheader/headersaneamientos.jpg";
       this.titulo="SANEAMIENTOS";
-      this.cosa="Te ofrecemos nuestro servicio, contamos con técnicos expertos, autorizados y certificados para hacer cualquier reparación de averías (tuberias, sanitarios, fugas, goteos, sanitarios, radiadores, etc)"
+      this.cosa="Ofrecemos nuestro servicio de reparación realizados por técnicos expertos solucionando de manera inmediata cualquier tipo de avería, fuga, atasco, grifería e instalación de aparatos, no dude en ponerse en contacto con nosotros si tiene alguna duda."
 
     }else if(this.location.path()=='/contacto'){
       this.bgBanner="../../../../assets/images/fondosheader/headersaneamientos.jpg";
