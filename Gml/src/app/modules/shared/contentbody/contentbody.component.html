@@ -1,8 +1,10 @@
-<div class="cuerposervice" style="margin-left: 3%; margin-right: 3%;">
-    <div class="d-flex justify-content-between">
+<div class="cuerposervice">
+    <div class="d-flex justify-content-between ">
         <div class="info">
-            <ng-content select="[titulo]"></ng-content>
+            <div class="titulo_body"><ng-content select="[titulo]"></ng-content></div>
+            <div class="descripcion">        
             <ng-content select="[descripcion]"></ng-content>
+            </div>
         </div>
         <div class="img">
             <ng-content select="[imagen]"></ng-content>
@@ -10,7 +12,11 @@
        
     </div>
     <div class="ventajas">
-        <ng-content select="[titulo_ventaja]"></ng-content>
-        <ng-content select="[descripcion_ventaja]"></ng-content>
+        <div class="titulo_body"><ng-content select="[titulo_ventaja]"></ng-content></div>
+        
+        <div class="descripcion_ventaja">
+            <ng-content select="[descripcion_ventaja]" ></ng-content>
+        </div>
+        
     </div>
 </div>
