@@ -14,7 +14,7 @@ export class GaleriaComponent implements OnInit {
     "calderas":33,
     "acs":6,
     "aerotermia":39,
-    "calefaccion":9,
+    "calefaccion":14,
     "gas":21,
     "saneamientos":21,
     "reforma":12,
