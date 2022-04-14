@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AcsComponent } from './acs/acs.component';
 import { AerotermiaComponent } from './aerotermia/aerotermia.component';
+import { AireacondicionadoComponent } from './aireacondicionado/aireacondicionado.component';
+import { ReformaComponent } from './reforma/reforma.component';
 import { CalderasComponent } from './calderas/calderas.component';
 import { CalefaccionComponent } from './calefaccion/calefaccion.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -38,6 +40,14 @@ import { SaneamientosComponent } from './saneamientos/saneamientos.component';
   {
     path:'gas',
     component:GasComponent
+  },
+  {
+    path:'reforma',
+    component:ReformaComponent
+  },
+  {
+    path:'aireacondicionado',
+    component:AireacondicionadoComponent
   },
   {
     path:'contacto',
