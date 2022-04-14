@@ -57,10 +57,21 @@ export class HeaderComponent implements OnInit {
       this.titulo="SANEAMIENTOS";
       this.cosa="Servicio de reparación inmediata de cualquier tipo de avería, fuga, atasco, grifería e instalación de aparatos, no dude en consultarnos."
 
+    }else if(this.location.path()=='/reforma'){
+      this.bgBanner="../../../../assets/images/fondosheader/headeralba.jpg";
+      this.titulo="ALBAÑILERIA";
+      this.cosa="Contamos con personal altamente cualificado y con amplia experiencia en el sector para garantizar un trabajo bien hecho."
+
+    }else if(this.location.path()=='/aireacondicionado'){
+        this.bgBanner="../../../../assets/images/fondosheader/headeraire.jpg";
+        this.titulo="AIRE ACONDICIONADO";
+        this.cosa="Instalación, cambio o mantenimiento de maquinas de aire acondicionado."
+
     }else if(this.location.path()=='/contacto'){
-      this.bgBanner="../../../../assets/images/fondosheader/headersaneamientos.jpg";
+      this.bgBanner="../../../../assets/images/fondosheader/headerform.jpg";
       this.titulo="CONTACTO";
       this.cosa="Si quieres un presupuesto sin compromiso o simplemente más información sobre cualquiera de nuestros servicios, no dudes en escribirnos."
+
     }else{
       this.bgBanner="https://remodela2000.com/wp-content/uploads/2021/04/reformas-en-madrid-1500x750.jpg";
       this.titulo="Instalaciones Siacara";

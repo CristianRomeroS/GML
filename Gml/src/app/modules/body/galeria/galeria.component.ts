@@ -13,10 +13,12 @@ export class GaleriaComponent implements OnInit {
   public objetosRuta:any={
     "calderas":33,
     "acs":6,
-    "aerotermia":42,
+    "aerotermia":39,
     "calefaccion":9,
     "gas":21,
-    "saneamientos":21
+    "saneamientos":21,
+    "reforma":12,
+    "aireacondicionado":5
   }
   constructor(private location: Location) { }
 
