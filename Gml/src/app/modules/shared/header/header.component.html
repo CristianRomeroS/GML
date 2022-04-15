@@ -2,16 +2,14 @@
     <nav class="navbar navbar-expand-md navbar-dark" [class.fixed-top]="fixedTop">
 		<div class="container">
 			<a routerLink="/inicio" class="navbar-brand"><img src="../../../../assets/images/logo/Logo-no-fondo.png" class="logo">
-				 <span class="log_span">Instalaciones Siacara</span></a>
-			
+				 <span class="log_span">Instalaciones Siacara</span></a> 
 			<button (click)="openMenu=!openMenu" type="button" class="navbar-toggler collapsed">
 				<span class="menu-icon-bar"></span>
 				<span class="menu-icon-bar"></span>
 				<span class="menu-icon-bar"></span>
 			</button>
-			
 			<div id="main-nav" [ngbCollapse]="openMenu" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto">	
 					<li><a href="#" class="nav-item nav-link active">Inicio</a></li>
 					<li class="dropdown">
 						<a class="nav-item nav-link">Servicios</a>
@@ -36,9 +34,11 @@
 							<a href="#" class="dropdown-item">Dropdown Item 5</a>
 						</div>
 					</li> -->
-					<li><a  routerLink="/contacto"  class="nav-item nav-link">Contacto</a></li>
+					<li><a  routerLink="/contacto"  class="nav-item nav-link">Contacto</a></li>				
 				</ul>
 			</div>
+			
+			<p class="ntelefono"><i class="fas fa-phone me-3"></i> 660 74 51 14 - 911 89 72 24</p>	
 		</div>
 	</nav>
 	

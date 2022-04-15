@@ -252,6 +252,9 @@ p {
   .navbar.fixed-top .navbar-nav {
     background: transparent;
   }
+  .ntelefono{
+    display: none;
+  }
 }
 @media screen and (min-width: 767px) {
   .banner {
@@ -291,6 +294,12 @@ p {
     -webkit-transform-origin: top;
     -ms-transform-origin: top;
     transform-origin: top;
+  }
+  .ntelefono{
+    color: #fff;
+    font-size: 1rem;
+    min-width: max-content;
+    padding-top: 1%;
   }
 }
 @-webkit-keyframes navbar-animation {
