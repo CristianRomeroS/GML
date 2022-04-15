@@ -7,6 +7,7 @@ import { Location } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
   
   public fixedTop: boolean=false;
@@ -63,7 +64,7 @@ export class HeaderComponent implements OnInit {
       this.cosa="Contamos con personal altamente cualificado y con amplia experiencia en el sector para garantizar un trabajo bien hecho."
 
     }else if(this.location.path()=='/aireacondicionado'){
-        this.bgBanner="../../../../assets/images/fondosheader/headeraire.jpg";
+        this.bgBanner="../../../../assets/images/fondosheader/headeraire2.jpg";
         this.titulo="AIRE ACONDICIONADO";
         this.cosa="Instalación, cambio o mantenimiento de maquinas de aire acondicionado."
 
