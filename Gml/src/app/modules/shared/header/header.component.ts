@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.location.path())
     if(this.location.path()=='/calefaccion'){
-      this.bgBanner="../../../../assets/images/fondosheader/headercalefaccion.jpg";
+      this.bgBanner="../../../../assets/images/Fontaneria/radiator.jpg";
       this.titulo="CALEFACCÍON";
       this.cosa=`¿Desea cambiar su antiguo radiador? 
       Nosotros nos encargamos de la sustitución de uno nuevo. Realizamos instalaciones en reformas y obra nueva, también reparamos cualquier fuga que pueda tener su instalación. Nosotros también instalamos suelo radiante, el cual está ganando más popularidad en estos últimos años, nos encargamos del dimensionamiento y su instalación.`
@@ -49,22 +49,22 @@ export class HeaderComponent implements OnInit {
       this.cosa="Instalación de suelo radiante, calefacción, refrigeración o agua caliente."
 
     }else if(this.location.path()=='/acs'){
-      this.bgBanner="../../../../assets/images/fondosheader/headeracs.jpg";
+      this.bgBanner="../../../../assets/images/Fontaneria/calentador.jpg";
       this.titulo="AGUA CALIENTE SANITARIA";
       this.cosa="Instalaciones ACS de agua caliente destinadas al consumo humano."
 
     }else if(this.location.path()=='/saneamientos'){
-      this.bgBanner="../../../../assets/images/fondosheader/headersaneamientos.jpg";
+      this.bgBanner="../../../../assets/images/Fontaneria/saneamiento.jpg";
       this.titulo="SANEAMIENTOS";
       this.cosa="Servicio de reparación inmediata de cualquier tipo de avería, fuga, atasco, grifería e instalación de aparatos, no dude en consultarnos."
 
     }else if(this.location.path()=='/reforma'){
-      this.bgBanner="../../../../assets/images/fondosheader/headeralba.jpg";
+      this.bgBanner="../../../../assets/images/OtrosServicios/reforma.jpg";
       this.titulo="ALBAÑILERIA";
       this.cosa="Contamos con personal altamente cualificado y con amplia experiencia en el sector para garantizar un trabajo bien hecho."
 
     }else if(this.location.path()=='/aireacondicionado'){
-        this.bgBanner="../../../../assets/images/fondosheader/headeraire2.jpg";
+        this.bgBanner="../../../../assets/images/OtrosServicios/aireacondicionado.jpg";
         this.titulo="AIRE ACONDICIONADO";
         this.cosa="Instalación, cambio o mantenimiento de maquinas de aire acondicionado."
 
