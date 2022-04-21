@@ -51,9 +51,17 @@ export class FormComponent implements OnInit {
     cuerpo = cuerpo.replace("CUERPO", consulta.mensaje);
 
     consulta.text = cuerpo;
-    this.http.post("https://parseapi.back4app.com/functions/sendEmail", consulta, this.httpOptions).subscribe(data => {
-      console.log(data);
+    this.http.post("https://parseapi.back4app.com/functions/sendEmail", consulta, this.httpOptions).subscribe((data: any) => {
+      if (data.result.includes("OK")) {
+        window.location.reload();
+        window.scroll({
+          top: 0,
+          left: 0
+        });
+        alert("Mensaje enviado correctamente");
+      }
     });
+
 
   }
 
