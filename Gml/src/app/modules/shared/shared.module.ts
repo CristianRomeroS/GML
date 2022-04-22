@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicadeprivacidad.component';
 import { ContentbodyComponent } from './contentbody/contentbody.component';
+import { MessageComponent } from './message/message.component';
 
 
 
@@ -20,7 +21,8 @@ import { ContentbodyComponent } from './contentbody/contentbody.component';
     FooterComponent,
     FormComponent,
     PoliticadeprivacidadComponent,
-    ContentbodyComponent
+    ContentbodyComponent,
+    MessageComponent
   ],
   imports: [
     CommonModule,
